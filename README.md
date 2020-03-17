@@ -3,7 +3,7 @@ just getting started with Android and Java. Looking forward to increasing my ski
 
 Required services: Stripe Membership: with developer API Keys both Publishable and Private keys
 
-# Yet TODOs:
+# TODOs:
 1> Fix membership model.py import statment to match revised User signin 
 2> Create membership test before allowing Post or Update access 
 3> Create email list capability in Django 
