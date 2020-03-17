@@ -10,3 +10,6 @@ Required services: Stripe Membership: with developer API Keys both Publishable a
 
 # Todays Status:
 Requires membership model.py import statement fixed (file damaged during upload). Once that is completed, the site should be operational and run bug free without Post or Update checks in place. 
+
+# Credits:
+Thanks to Mitch Tabian at CodingWithMitch.com for his project help Building A Website With Django. I would also like to thank Nick Walters for his expertise with Django stripe membership. 
