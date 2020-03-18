@@ -1,5 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model as user_model
+
+User = user_model()
 
 class MembershipPlan(models.Model):
     title = models.CharField(max_length=255)
@@ -12,11 +14,6 @@ class Customer(models.Model):
     stripe_subscription_id = models.CharField(max_length=255)
     cancel_at_period_end = models.BooleanField(default=False)
     membership = models.BooleanField(default=False)
-
-
-
-
-
 
 
 
