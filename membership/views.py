@@ -7,8 +7,8 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required, user_passes_test
 import stripe
 from django.http import HttpResponse
-
-stripe.api_key = 'sk_test_TsXvLt75qSXG159qMbKxo6qC00JOylwpQE'
+#Replace this api_key with your Stripe Developer's key
+stripe.api_key = 'sk_temp_TsXvLt75qSXG159qMbKxo6qC00JOylwpQE'
 
 @user_passes_test(lambda u: u.is_superuser)
 def updateaccounts(request):
