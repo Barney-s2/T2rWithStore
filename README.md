@@ -5,6 +5,7 @@ Just getting started with Android and Java. Looking forward to increasing my ski
 Stripe Membership: You will need to setup an account with Stripe and add Developer API Keys both Publishable and Private keys
 
 # TODOs:
+1> Create_Blog and Blog_update API's are usable by any auth user. Presently needs restricted access for members only usage.
 1> Create email listings with additional capabilities (customers/user toggling at admin level only) in Django.  
 
 # Todays Status:
