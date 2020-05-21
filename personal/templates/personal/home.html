@@ -22,7 +22,7 @@
 	}
 	.create-post-bar{
 		background-color: #fff;
-		margin-bottom:20px;
+		margin-bottom:10px;
 	}
 
 	.left-column{
@@ -35,6 +35,10 @@
 	.lead{
 		font-size: 17px;
 	}
+
+	.footer{
+		margin-bottom: 3px;
+	}
 </style>
 <div class="container">
 	<div class="row">
@@ -44,11 +48,16 @@
 
 			<!-- Top 'create post' bar for a small screen size -->
 			<div class="d-lg-none mb-3">
-				<div class="card m-auto d-flex flex-column p-3">
-					<img class="img-fluid d-block m-auto pb-2" src="{% static 'codingwithmitch_logo.png' %}" width="72" height="72">
-					<p class="lead">Become a member and start posting to this site. Signup today and participate in community events or promote your local business.</p>
-					<p class="m-auto"><a class="btn btn-primary" href="{% url 'blog:create' %}">Create post</a></p>
-				</div>
+					<div class="card m-auto d-flex flex-column p-3">
+							<img class="img-fluid d-block m-auto pb-2" src="{% static 'hourglass 72x72.png' %}" width="72" height="72">
+							<div style="text-align: center;">
+							<p  class="lead"><h5><em>WELCOME TO T2r.co</em></h5> Become a member and start posting to this site. Our aim is to enhance your sales opportunities. Signup today and promote community events or advertise your local business.</p>
+							</div>
+
+							<p class="m-auto"><a class="btn btn-primary" href="{% url 'blog:create' %}">Create post</a></p>
+					</div>
+				
+				
 			</div>
 			<!-- end Top 'create post' bar -->
 
@@ -70,6 +79,7 @@
 			{% include 'blog/snippets/blog_post_pagination.html' with blog_posts=blog_posts %}
 
 		</div>
+
 		<!-- end blog feed -->
 
 
@@ -78,10 +88,16 @@
 		<div class="right-column col-lg-3 d-lg-flex d-none flex-column">
 
 			<div class="card create-post-bar d-flex flex-column p-3">
-				<img class="img-fluid d-block m-auto pb-2" src="{% static 'codingwithmitch_logo.png' %}" width="72" height="72">
-				<p class="lead">Become a member and start posting to this site. Signup today and participate in community events or promote your local business.</p>
-				<p class="m-auto"><a class="btn btn-primary" href="{% url 'blog:create' %}">Create post</a></p>
+			<img class="img-fluid d-block m-auto pb-2" src="{% static 'hourglass 72x72.png' %}" width="72" height="72">	
+					<div style="text-align: center;">
+						<p  class="lead"><h5><em>WELCOME TO T2r.co</em></h5> Become a member and start posting to this site. Our aim is to enhance your sales opportunities. Signup today and promote community events or advertise your local business.</p>
+					</div>
+
+				<p class="m-auto">
+					<a class="btn btn-primary" href="{% url 'blog:create' %}">Create post</a>
+				</p>
 			</div>
+
 		
 		</div>
 		<!-- end Right 'create post' column  -->
